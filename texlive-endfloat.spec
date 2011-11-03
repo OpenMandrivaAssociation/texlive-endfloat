@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/endfloat
+# catalog-date 2009-09-25 23:06:49 +0200
+# catalog-license gpl
+# catalog-version 2.4i
 Name:		texlive-endfloat
 Version:	2.4i
 Release:	1
@@ -51,6 +57,7 @@ potential maintainers are solicited...).
 %doc %{_texmfdistdir}/source/latex/endfloat/endfloat.drv
 %doc %{_texmfdistdir}/source/latex/endfloat/endfloat.dtx
 %doc %{_texmfdistdir}/source/latex/endfloat/endfloat.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,3 +68,5 @@ potential maintainers are solicited...).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
