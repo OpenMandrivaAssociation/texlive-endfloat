@@ -1,11 +1,11 @@
-# revision 15878
+# revision 24843
 # category Package
 # catalog-ctan /macros/latex/contrib/endfloat
-# catalog-date 2009-09-25 23:06:49 +0200
+# catalog-date 2011-12-13 18:42:07 +0100
 # catalog-license gpl
-# catalog-version 2.4i
+# catalog-version 2.5b
 Name:		texlive-endfloat
-Version:	2.4i
+Version:	2.5b
 Release:	1
 Summary:	Move floats to the end with markers where they belong
 Group:		Publishing
@@ -18,32 +18,30 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
-Place all figures on pages by themselves at the end of the
+Place all floats on pages by themselves at the end of the
 document, optionally leaving markers like "[Figure 3 about
 here]" in the text near to where the figure (or table) would
-normally have occurred. (The current maintainer has announced
-that he would like to relinquish control of the package;
-potential maintainers are solicited...).
+normally have occurred. (Float types figure and table are
+recognised by the package, unmodified. Several packages define
+other types of float; it is possible to register such float
+types with endfloat.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -51,11 +49,9 @@ potential maintainers are solicited...).
 %{_texmfdistdir}/tex/latex/endfloat/efxmpl.cfg
 %{_texmfdistdir}/tex/latex/endfloat/endfloat.sty
 %doc %{_texmfdistdir}/doc/latex/endfloat/COPYING
-%doc %{_texmfdistdir}/doc/latex/endfloat/endfloat.asc
+%doc %{_texmfdistdir}/doc/latex/endfloat/README
 %doc %{_texmfdistdir}/doc/latex/endfloat/endfloat.pdf
-%doc %{_texmfdistdir}/doc/latex/endfloat/readme.enf
 #- source
-%doc %{_texmfdistdir}/source/latex/endfloat/endfloat.drv
 %doc %{_texmfdistdir}/source/latex/endfloat/endfloat.dtx
 %doc %{_texmfdistdir}/source/latex/endfloat/endfloat.ins
 %doc %{_tlpkgobjdir}/*.tlpobj
