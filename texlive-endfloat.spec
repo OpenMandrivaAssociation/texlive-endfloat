@@ -1,13 +1,13 @@
-# revision 24843
+# revision 24962
 # category Package
 # catalog-ctan /macros/latex/contrib/endfloat
-# catalog-date 2011-12-13 18:42:07 +0100
+# catalog-date 2011-12-24 01:13:38 +0100
 # catalog-license gpl
-# catalog-version 2.5b
+# catalog-version 2.5c
 Name:		texlive-endfloat
-Version:	2.5b
-Release:	3
-Summary:	Move floats to the end with markers where they belong
+Version:	2.5c
+Release:	1
+Summary:	Move floats to the end, leaving markers where they belong
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/endfloat
 License:	GPL
@@ -23,10 +23,10 @@ Requires(post):	texlive-kpathsea
 Place all floats on pages by themselves at the end of the
 document, optionally leaving markers like "[Figure 3 about
 here]" in the text near to where the figure (or table) would
-normally have occurred. (Float types figure and table are
-recognised by the package, unmodified. Several packages define
-other types of float; it is possible to register such float
-types with endfloat.
+normally have occurred. Float types figure and table are
+recognised by the package, unmodified. Since several packages
+define other types of float, it is possible to register these
+float types with endfloat.
 
 %post
     %{_sbindir}/texlive.post
