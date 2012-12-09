@@ -56,3 +56,29 @@ float types with endfloat.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.5c-1
++ Revision: 758862
+- Update to latest upstream release
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.5b-3
++ Revision: 751417
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.5b-2
++ Revision: 745210
+- texlive-endfloat
+
+* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.5b-1
++ Revision: 743252
+- texlive-endfloat
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.4i-1
++ Revision: 718331
+- texlive-endfloat
+- texlive-endfloat
+- texlive-endfloat
+- texlive-endfloat
+
