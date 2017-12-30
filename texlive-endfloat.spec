@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version 2.5c
 Name:		texlive-endfloat
-Version:	2.5c
-Release:	9
+Version:	2.5d
+Release:	1
 Summary:	Move floats to the end, leaving markers where they belong
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/endfloat
