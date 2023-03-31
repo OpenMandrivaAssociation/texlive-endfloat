@@ -1,6 +1,6 @@
 Name:		texlive-endfloat
 Version:	57090
-Release:	1
+Release:	2
 Summary:	Move floats to the end, leaving markers where they belong
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/endfloat
