@@ -3,7 +3,7 @@ Version:	57090
 Release:	2
 Summary:	Move floats to the end, leaving markers where they belong
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/endfloat
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/endfloat
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/endfloat.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/endfloat.doc.r%{version}.tar.xz
